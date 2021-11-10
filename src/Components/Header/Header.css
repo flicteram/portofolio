@@ -1,0 +1,97 @@
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:20px 20px;
+}
+.navInner{
+    display: flex;
+    justify-content: center;
+    width:1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color:rgb(0, 255, 191);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.locationNav{
+    color:black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:10px;
+    display: none;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(243, 243, 243);
+}
+.notLocationNav{
+    color:black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:10px;
+    display: none;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.notLocationNav:hover,
+.notLocationNav:focus{
+    background-color: rgb(243, 243, 243);
+}
+
+.navItemLow{
+    padding:20px 0px;
+    text-align: center;
+    color:black;
+    background-color: rgb(250, 250, 250);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+.navItemLow:hover,
+.navItemLow:focus{
+    background-color: rgb(190, 190, 190);
+    color:white;
+}
+
+@media(min-width:600px){
+    .logo{
+        padding:10px;
+    }
+    nav{
+        padding:10px 40px;
+    }
+    .locationNav,
+    .notLocationNav{
+        display:block;
+        font-size: 0.8rem;
+    }
+}
+@media(min-width:700px){
+    .locationNav,
+    .notLocationNav{
+        font-size: 0.95rem;
+    }
+}
+@media(min-width:1200px){
+    .logo{
+        padding:10px 0px;
+    }
+    ul{
+        width: 25%;
+    }
+    nav{
+        padding:10px;
+    }
+}

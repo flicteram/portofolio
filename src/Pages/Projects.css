@@ -1,0 +1,182 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.projects{
+    margin:100px 20px 0px 20px;
+    max-width: 1200px;
+}
+.projects>h1{
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+.socialMediaContainer{
+    width: 150px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.projectsIntroduction{
+    padding:10px 0px 20px 0px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+.projectContainerLeft,
+.projectContainerRight{
+    position: relative;
+    margin:20px 0px;
+    height: 280px;
+    border-radius: 10px;
+    border:1px solid rgb(196, 196, 196);
+}
+.projectAbout{
+    margin:10px 0px;
+    max-width: 350px;
+}
+.projectPictureLeft,
+.projectPictureRight{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    border-radius: 10px;
+}
+.projectInfoLeft,
+.projectInfoRight{
+    color:black;
+    position: absolute;
+    z-index: 1000;
+    top:50%;
+    transform: translateY(-50%);
+    padding:0px 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.projectNameLeft,
+.projectNameRight{
+    font-size: 1.4rem;
+    color:rgb(0, 255, 191);
+    text-shadow: 2px 2px 1px  black;
+}
+
+.techsContainerLeft,
+.techsContainerRight{
+    display: flex;
+    font-size: 0.72rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.techsContainerLeft>p,
+.techsContainerRight>p{
+    margin-right: 10px;
+}
+
+@media(min-width:600px){
+    .projects{
+        margin:100px 50px 0px 50px;
+    }
+    .projectContainerLeft,
+    .projectContainerRight{
+        height: 400px;
+    }
+    .projectPictureLeft,
+    .projectPictureRight{
+        opacity: 0.5;
+    }
+    .projectInfoLeft,
+    .projectInfoRight{
+        background-color: rgb(250, 250, 250);
+        padding:20px;
+        left:20px;
+        border-radius: 10px;
+        box-shadow: 1px 3px 5px 0px black;
+    }
+    .projectAbout{
+        max-width: 400px;
+    }
+}
+@media(min-width:900px){
+    .projects>h1{
+        font-size: 3rem;
+    }
+    .projectsIntroduction{
+        font-size: 1.2rem;
+    }
+    .projects{
+        align-self: center;
+    }
+    .projectContainerLeft,
+    .projectContainerRight{
+        display: flex;
+        align-items: center;
+        border:none;
+    }
+    .projectContainerRight{
+        flex-direction: row-reverse;
+    }
+    .projectPictureLeft,
+    .projectPictureRight{
+        opacity: 1;
+        width: 70%;
+        border:1px solid rgb(196, 196, 196);
+        object-fit:fill;
+        box-shadow: 1px 3px 5px 0px black;
+    }
+    .projectPictureLeft{
+        margin-right: -25px;
+    }
+    .projectPictureRight{
+        margin-left: -25px;
+    }
+    .projectInfoLeft{
+        padding:0;
+        position: initial;
+        left:unset;
+        background-color:inherit;
+        box-shadow: none;
+        transform:initial;
+        margin-left: -25px;
+    }
+    .projectInfoRight{
+        padding:0;
+        position: initial;
+        left:unset;
+        background-color:inherit;
+        box-shadow: none;
+        transform:initial;
+        margin-right: -25px;
+    }
+    .projectAbout{
+        background-color: rgb(250, 250, 250);
+        padding:20px;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+    .projectNameRight,
+    .projectNameLeft{
+        text-shadow: none;
+        font-size: 1.8rem;
+    }
+    .projectNameLeft,
+    .linksIconsLeft,
+    .techsContainerLeft{
+        align-self: flex-end;
+    }
+    .techsContainerLeft>p{
+        margin:0;
+        margin-left: 10px;
+    }
+    .techsContainerRight>p{
+        margin:0;
+        margin-right: 10px;
+    }
+}
+
+@media(min-width:1200px){
+    .projects{
+        width: 100%;
+    }
+}
