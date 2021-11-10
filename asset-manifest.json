@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.e34c4585.chunk.css",
+    "main.js": "/portofolio/static/js/main.1fb5cbc9.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.1fb5cbc9.chunk.js.map",
+    "runtime-main.js": "/portofolio/static/js/runtime-main.7c5729ed.js",
+    "runtime-main.js.map": "/portofolio/static/js/runtime-main.7c5729ed.js.map",
+    "static/js/2.582cb0aa.chunk.js": "/portofolio/static/js/2.582cb0aa.chunk.js",
+    "static/js/2.582cb0aa.chunk.js.map": "/portofolio/static/js/2.582cb0aa.chunk.js.map",
+    "index.html": "/portofolio/index.html",
+    "static/css/main.e34c4585.chunk.css.map": "/portofolio/static/css/main.e34c4585.chunk.css.map",
+    "static/js/2.582cb0aa.chunk.js.LICENSE.txt": "/portofolio/static/js/2.582cb0aa.chunk.js.LICENSE.txt",
+    "static/media/Alexandru Flicter - resume.94d5ce55.pdf": "/portofolio/static/media/Alexandru Flicter - resume.94d5ce55.pdf",
+    "static/media/covid-tracker.035a66a3.jpg": "/portofolio/static/media/covid-tracker.035a66a3.jpg",
+    "static/media/instagramPic.7b41caed.png": "/portofolio/static/media/instagramPic.7b41caed.png",
+    "static/media/me.911ea754.jpg": "/portofolio/static/media/me.911ea754.jpg",
+    "static/media/movieflix.ac60b478.jpg": "/portofolio/static/media/movieflix.ac60b478.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c5729ed.js",
+    "static/js/2.582cb0aa.chunk.js",
+    "static/css/main.e34c4585.chunk.css",
+    "static/js/main.1fb5cbc9.chunk.js"
+  ]
+}
