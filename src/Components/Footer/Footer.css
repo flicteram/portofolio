@@ -2,8 +2,6 @@ footer{
     margin-top:100px;
     padding:40px 20px;
     display: flex;
-    /* background-color: rgb(250, 250, 250);
-    border-top: 1px solid rgb(196, 196, 196); */
     flex-direction: column;
     width: 100%;
 }
