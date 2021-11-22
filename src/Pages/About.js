@@ -18,9 +18,9 @@ function About(){
         color:'black',
         borderRadius:'10px',
         padding:'2px',
-        boxShadow:'0px 0px 6px 0px rgb(0, 255, 191)',
+        boxShadow:'0px 0px 6px 0px rgb(0, 226, 170)',
         '&:hover':{
-            color:'rgb(0, 255, 191)',
+            color:'rgb(0, 226, 170)',
             cursor:'pointer'
         }
     }

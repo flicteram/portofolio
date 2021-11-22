@@ -17,7 +17,7 @@ function Footer(){
         borderRadius:'5px',
         backgroundColor:'white',
         '&:hover':{
-            color:'rgb(0, 255, 191)',
+            color:'rgb(0, 226, 170)',
             cursor:'pointer'
         }
     }
