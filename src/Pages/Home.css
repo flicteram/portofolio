@@ -3,12 +3,14 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 .homeContainerInner{
     max-width: 900px;
     align-self: center;
     margin:0 20px;
+
 }
 .alex{
     color:rgb(0, 226, 170);;
@@ -17,6 +19,17 @@
     margin:100px 0px;
     display: flex;
     flex-direction: column;
+    animation: intro 1s;
+}
+@keyframes intro{
+    0%{
+        margin:100px 0px 0px 5000px;
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+        margin:100px 0px;
+    }
 }
 .heyThere{
     color:rgb(0, 226, 170);;
@@ -58,11 +71,23 @@ a>.resumeButton{
 .recentProjects{
     font-size: 1.8rem;
     font-weight: 800;
-
 }
 .projectsHome{
     display: flex;
     flex-direction: column;
+    animation:proj 1s;
+}
+
+
+@keyframes proj{
+    0%{
+        margin-left: -5000px;
+        width: 100%;
+    }   
+    100%{
+        margin:0;
+        width: 100%;
+    }
 }
 .projectHomeContainer{
     border:1px solid black;
@@ -70,7 +95,6 @@ a>.resumeButton{
     padding:15px;
     border-radius: 10px;
     color:black;
-    
 }
 .projectHomeContainer:hover,
 .projectHomeContainer:focus{
@@ -78,6 +102,7 @@ a>.resumeButton{
     box-shadow: 0px 2px 5px 1px black;
     transform: scale(1.01);
 }
+
 .projectNameHome{
     color:rgb(0, 226, 170);
 }

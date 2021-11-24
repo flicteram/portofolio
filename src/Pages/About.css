@@ -4,6 +4,7 @@
     justify-content: space-between;
     min-height: 100vh;
     align-items: center;
+    overflow-x:hidden;
 }
 .aboutMeTitle{
     padding-bottom: 10px;
@@ -13,17 +14,28 @@
     margin-bottom: 20px;
 }
 .aboutContentContainer{
-    max-width: 1200px;
     margin:100px 20px 0px 20px;
+    max-width: 1200px;
+    animation: aboutLow 1s;
 }
 .aboutContentInner{
     display: flex;
     flex-direction: column;
 }
+
 .aboutMeAvatar{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@keyframes aboutLow {
+    0%{
+        margin-left: 5000px;
+    }
+    100%{
+        
+    }
 }
 .aboutMeAvatar>h2{
     margin-top:5px;
@@ -48,6 +60,8 @@
 .aboutMeText>p{
     margin-bottom: 20px;
 }
+
+
 @media(min-width:600px){
     .aboutContentContainer{
         margin:100px 50px 0px 50px;
@@ -74,6 +88,7 @@
 
 @media(min-width:1200px){
     .aboutContentContainer{
+        width: 98%;
         margin:100px 0px 0px 0px;
     }
     .aboutMeTitle{
