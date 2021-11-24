@@ -29,7 +29,7 @@ export default [
         picture:movieflix,
         aboutProject:`With an interface inspired by Netflix, Movieflix gives the user opportunity to search
         information of a movie of his choice.`,
-        techs:['React','TMDB API','React Carousel'],
+        techs:['React','TMDB API','React Router'],
         github:'https://github.com/flicteram/movieflix',
         live:'https://flicteram.github.io/movieflix/',
     }
