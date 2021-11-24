@@ -1,14 +1,21 @@
 import React,{useState} from "react";
 import './Header.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import Drawer from '@mui/material/Drawer';
 import {Link,useNavigate} from 'react-router-dom'
 
 
 function Header({homeNav,projects,aboutNav}){
     const [isOpen,setIsOpen]=useState(false)
     const navigate = useNavigate()
+
+    function handleOpen(){
+        if(isOpen){
+            setIsOpen(false)
+        }
+        else{
+            setIsOpen(true)
+        }
+        
+    }
 
     const styles = (theme)=>({
         [theme.breakpoints.down('sm')]:{
@@ -31,22 +38,19 @@ function Header({homeNav,projects,aboutNav}){
             <Link to={'/projects'}><li className={projects?'locationNav':'notLocationNav'}>Projects</li></Link>
             <Link to={'/about'}><li className={aboutNav?'locationNav':'notLocationNav'}>About</li></Link>
             </ul>
-            {isOpen?
-            <CloseIcon sx={{zIndex:1000,cursor:'pointer',width:30,height:30}} onClick={()=>setIsOpen(false)}/>:
-            <MenuIcon sx={styles} onClick={()=>setIsOpen(true)}/>}
 
-            <Drawer className='drawer'
-            anchor={'top'}
-            open={isOpen}
-            onClose={()=>setIsOpen(false)}
-            sx={{zIndex:'999'}}
-            hideBackdrop={false}
-            elevation={16}
-            >
+            <div className={isOpen?'hamburgerOpen':'hamburger'} onClick={()=>handleOpen()}>
+                <div className='bar1'></div>
+                <div className='bar2'></div>
+                <div className='bar3'></div>
+            </div>
+            
+            <div className={isOpen?'navLowOpen':'navLowClosed'}>
             <Link to={'/'} className='navItemLow'>Home</Link>
             <Link to={'/projects'} className='navItemLow'>Projects</Link>
             <Link to={'/about'} className='navItemLow'>About</Link>
-            </Drawer>
+            </div>
+
             </div>           
         </nav>
     )

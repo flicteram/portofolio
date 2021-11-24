@@ -4,12 +4,52 @@ nav{
     width: 100%;
     padding:20px 20px;
 }
+.hamburger{
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1002;
+    position: absolute;
+    right: 0;
+}
+.hamburgerOpen{
+    z-index: 1002;
+    cursor:pointer;
+    position: fixed;
+    right: 20px;
+    overflow: hidden;
+}
+.bar1,
+.bar2,
+.bar3{
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+.bar1,.bar3{
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: transform 250ms;
+}
+.hamburgerOpen>.bar1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transition: transform 250ms;
+}
+.hamburgerOpen>.bar2{
+    opacity: 0;
+    transition:opacity 250ms;
+}
+.hamburgerOpen>.bar3{
+    transform: rotate(45deg) translate(-6px, -4px);
+    transition:transform 250ms;
+}
+
 .navInner{
     display: flex;
     justify-content: center;
     width:1200px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo{
     color:rgb(0, 226, 170);
@@ -23,7 +63,7 @@ ul{
     justify-content: space-between;
 }
 .locationNav{
-    color:black;
+    color:rgb(0, 226, 170);
     cursor: pointer;
     border-radius: 10px;
     padding:10px;
@@ -47,22 +87,51 @@ ul{
 .notLocationNav:hover,
 .notLocationNav:focus{
     background-color: rgb(243, 243, 243);
+    color:rgb(0, 226, 170);
 }
 
 .navItemLow{
-    padding:20px 0px;
+    padding:20px 50px;
     text-align: center;
     color:black;
-    background-color: rgb(250, 250, 250);
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 a{
     text-decoration: none;
 }
 .navItemLow:hover,
 .navItemLow:focus{
+    background-color: rgb(243, 243, 243);
+    color:rgb(0, 226, 170);
+}
+
+.navLowOpen{
     background-color: rgb(190, 190, 190);
-    color:white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-evenly;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1001;
+    transition: width 250ms;
+}
+
+.navLowClosed{
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-evenly;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    width: 0;
+    z-index: 1001;
+    transition: width 250ms;
 }
 
 @media(min-width:600px){
@@ -76,6 +145,9 @@ a{
     .notLocationNav{
         display:block;
         font-size: 0.8rem;
+    }
+    .hamburger{
+        display: none;
     }
 }
 @media(min-width:700px){
