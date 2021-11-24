@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Fade from '@mui/material/Fade';
+
 
 
 function About(){
@@ -25,7 +25,7 @@ function About(){
         }
     }
     return(
-        <Fade in={true} timeout={500}>
+        
     <div className='aboutContainer'>
         <Header aboutNav={true}/>
             <div className='aboutContentContainer'>
@@ -75,7 +75,7 @@ function About(){
             </div>
         <Footer/>
     </div>
-    </Fade>)
+    )
 }
 
 export default About

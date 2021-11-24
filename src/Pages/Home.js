@@ -4,7 +4,6 @@ import './Home.css'
 import projectsData from "../projectsData";
 import Footer from "../Components/Footer/Footer";
 import {useNavigate} from 'react-router-dom'
-import Fade from '@mui/material/Fade';
 import pdf from '../Alexandru Flicter - resume.pdf'
 
 
@@ -13,7 +12,6 @@ function Home(){
     const navigate = useNavigate()
 
     return(
-        <Fade in={true} timeout={500}>
         <div className='homeContainer'>
             <Header homeNav={true} aboutNav={false} />
             <div className='homeContainerInner'>
@@ -42,7 +40,6 @@ function Home(){
             <Footer/>
             
         </div>
-        </Fade>
     )
 }
 

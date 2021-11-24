@@ -10,7 +10,6 @@ import Fade from '@mui/material/Fade'
 function Projects(){
 
     return(
-        <Fade in={true} timeout={500}>
         <div className='projectsContainer'>
             <Header projects={true}/>
             <div className='projects'>
@@ -36,7 +35,6 @@ function Projects(){
             </div>
             <Footer/>
         </div>
-        </Fade>
     )
 }
 
