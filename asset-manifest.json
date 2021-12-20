@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.b1fa63d9.chunk.css",
-    "main.js": "/portofolio/static/js/main.f684070a.chunk.js",
-    "main.js.map": "/portofolio/static/js/main.f684070a.chunk.js.map",
+    "main.js": "/portofolio/static/js/main.ff10cc20.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.ff10cc20.chunk.js.map",
     "runtime-main.js": "/portofolio/static/js/runtime-main.7c5729ed.js",
     "runtime-main.js.map": "/portofolio/static/js/runtime-main.7c5729ed.js.map",
-    "static/js/2.065cab24.chunk.js": "/portofolio/static/js/2.065cab24.chunk.js",
-    "static/js/2.065cab24.chunk.js.map": "/portofolio/static/js/2.065cab24.chunk.js.map",
+    "static/js/2.27e2b9fb.chunk.js": "/portofolio/static/js/2.27e2b9fb.chunk.js",
+    "static/js/2.27e2b9fb.chunk.js.map": "/portofolio/static/js/2.27e2b9fb.chunk.js.map",
     "index.html": "/portofolio/index.html",
     "static/css/main.b1fa63d9.chunk.css.map": "/portofolio/static/css/main.b1fa63d9.chunk.css.map",
-    "static/js/2.065cab24.chunk.js.LICENSE.txt": "/portofolio/static/js/2.065cab24.chunk.js.LICENSE.txt",
+    "static/js/2.27e2b9fb.chunk.js.LICENSE.txt": "/portofolio/static/js/2.27e2b9fb.chunk.js.LICENSE.txt",
     "static/media/Alexandru Flicter - resume.71c5d361.pdf": "/portofolio/static/media/Alexandru Flicter - resume.71c5d361.pdf",
     "static/media/covid-tracker.035a66a3.jpg": "/portofolio/static/media/covid-tracker.035a66a3.jpg",
     "static/media/instagramPic.7b41caed.png": "/portofolio/static/media/instagramPic.7b41caed.png",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7c5729ed.js",
-    "static/js/2.065cab24.chunk.js",
+    "static/js/2.27e2b9fb.chunk.js",
     "static/css/main.b1fa63d9.chunk.css",
-    "static/js/main.f684070a.chunk.js"
+    "static/js/main.ff10cc20.chunk.js"
   ]
 }
