@@ -5,7 +5,6 @@ import Footer from "../Components/Footer/Footer";
 import projectsData from "../projectsData";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
-import Fade from '@mui/material/Fade'
 
 function Projects(){
 
