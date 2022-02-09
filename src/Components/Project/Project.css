@@ -1,0 +1,180 @@
+.projectContainer,
+.projectContainerAnim{
+    position: relative;
+    margin:20px 0px;
+    height: 280px;
+    border-radius: 5px;
+}
+.projectContainerAnim{
+    border: 1px solid rgb(196, 196, 196);
+    transition: border 1s;
+}
+.projectPicture,
+.projectPictureAnim{
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    object-fit: cover;
+}
+.projectContainerAnim:nth-child(odd)>.projectPicture,
+.projectContainer:nth-child(odd)>.projectPicture{
+    transform: translateX(-200%);
+}
+.projectContainerAnim:nth-child(even)>.projectPicture,
+.projectContainer:nth-child(even)>.projectPicture{
+    transform: translateX(200%);
+}
+.projectPictureAnim{
+    transform:translateX(0%);
+    transition: transform 250ms;
+}
+.projectInfo,
+.projectInfoAnim{
+    color:black;
+    position: absolute;
+    z-index: 1000;
+    top:50%;
+    padding:0px 15px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.projectContainerAnim:nth-child(odd)>.projectInfo,
+.projectContainer:nth-child(odd)>.projectInfo{
+    transform: translateX(200%);
+}
+.projectContainerAnim:nth-child(even)>.projectInfo,
+.projectContainer:nth-child(even)>.projectInfo{
+    transform: translateX(-200%);
+} 
+ .projectInfoAnim{
+    transform: translateX(0%);
+    transform: translateY(-50%);
+    transition: transform 250ms;
+    
+}
+.projectAbout{
+    margin:10px 0px;
+    max-width: 350px;
+}
+.projectName{
+    font-size: 1.4rem;
+    color:rgb(0, 226, 170);
+    text-shadow: 2px 2px 1px  black;
+}
+.techsContainer{
+    display: flex;
+    font-size: 0.72rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.techsContainer>p{
+    margin-right: 10px;
+}
+@media(min-width:600px){
+    .projectContainer,
+    .projectContainerAnim{
+        height: 400px;
+    }
+    .projectPicture,
+    .projectPictureAnim{
+        opacity: 0.5;
+    }
+    .projectInfo,
+    .projectInfoAnim{
+        background-color: rgb(250, 250, 250);
+        padding:20px;
+        left:20px;
+        border-radius: 10px;
+        box-shadow: 1px 3px 5px 0px black;
+    }
+    .projectAbout{
+        max-width: 400px;
+    }
+}
+
+@media(min-width:900px){
+    .projectContainer,
+    .projectContainerAnim{
+        display: flex;
+        align-items: center;
+        border:none;
+    }
+    .projectContainer:nth-child(even),
+    .projectContainerAnim:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .projectPicture,
+    .projectPictureAnim{
+        opacity: 1;
+        width: 70%;
+        border:1px solid rgb(196, 196, 196);
+        box-shadow: 1px 3px 5px 0px black;
+        object-position: 50% 0%;
+        border-radius: 10px;
+    }
+    .projectContainer:nth-child(even)>.projectPicture,
+    .projectContainerAnim:nth-child(even)>.projectPicture,
+    .projectContainer:nth-child(even)>.projectPictureAnim,
+    .projectContainerAnim:nth-child(even)>.projectPictureAnim{
+        margin-left: -25px;
+    }
+    .projectContainer:nth-child(odd)>.projectPicture,
+    .projectContainerAnim:nth-child(odd)>.projectPicture,
+    .projectContainer:nth-child(odd)>.projectPictureAnim,
+    .projectContainerAnim:nth-child(odd)>.projectPictureAnim{
+        margin-right: -25px;
+    }
+    .projectInfo,
+    .projectInfoAnim{
+        padding:0;
+        position: initial;
+        left:unset;
+        background-color:inherit;
+        box-shadow: none;
+        transform:initial;
+    }
+    .projectContainer:nth-child(even)>.projectInfo,
+    .projectContainerAnim:nth-child(even)>.projectInfo,
+    .projectContainer:nth-child(even)>.projectInfoAnim,
+    .projectContainerAnim:nth-child(even)>.projectInfoAnim{
+        margin-right: -25px;
+    }
+    .projectAbout{
+        background-color: rgb(250, 250, 250);
+        padding:20px;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+    .projectName{
+        text-shadow: none;
+        font-size: 1.8rem;
+    }
+    .projectContainer:nth-child(odd)>.projectInfo>.projectName,
+    .projectContainerAnim:nth-child(odd)>.projectInfo>.projectName,
+    .projectContainer:nth-child(odd)>.projectInfoAnim>.projectName,
+    .projectContainerAnim:nth-child(odd)>.projectInfoAnim>.projectName{
+        align-self: flex-end;
+    }
+    .projectContainer:nth-child(odd)>.projectInfo>.techsContainer,
+    .projectContainerAnim:nth-child(odd)>.projectInfo>.techsContainer,
+    .projectContainer:nth-child(odd)>.projectInfoAnim>.techsContainer,
+    .projectContainerAnim:nth-child(odd)>.projectInfoAnim>.techsContainer{
+        align-self: flex-end;
+    }
+    .projectContainer:nth-child(odd)>.projectInfo>.techsContainer>p,
+    .projectContainerAnim:nth-child(odd)>.projectInfo>.techsContainer>p,
+    .projectContainer:nth-child(odd)>.projectInfoAnim>.techsContainer>p,
+    .projectContainerAnim:nth-child(odd)>.projectInfoAnim>.techsContainer>p{
+        margin:0;
+        margin-left: 10px;
+    }
+    .projectContainer:nth-child(odd)>.projectInfo>.linksIcons,
+    .projectContainerAnim:nth-child(odd)>.projectInfo>.linksIcons,
+    .projectContainer:nth-child(odd)>.projectInfoAnim>.linksIcons,
+    .projectContainerAnim:nth-child(odd)>.projectInfoAnim>.linksIcons{
+        align-self: flex-end;
+    }
+}

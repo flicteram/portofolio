@@ -13,128 +13,34 @@
 .projects>h1{
     font-weight: 900;
     font-size: 2.3rem;
+    text-align: start;
+    animation: projTitle 250ms linear;
 }
-.socialMediaContainer{
-    width: 150px;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
+@keyframes projTitle{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 .projectsIntroduction{
     padding:10px 0px 20px 0px;
     border-bottom: 1px solid rgb(196, 196, 196);
+    animation: projIntroduction 250ms linear;
 }
-.projectContainerLeft,
-.projectContainerRight{
-    position: relative;
-    margin:20px 0px;
-    height: 280px;
-    border-radius: 10px;
-    border:1px solid rgb(196, 196, 196);
-
-}
-
-.projectAbout{
-    margin:10px 0px;
-    max-width: 350px;
-}
-.projectPictureLeft,
-.projectPictureRight{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    border-radius: 10px;
-}
-
-.projectPictureLeft{
-    animation: projPicLowLeft 1s;
-}
-.projectPictureRight{
-    animation:projPicLowRight 1s;
-}
-
-@keyframes projPicLowLeft{
+@keyframes projIntroduction{
     0%{
-        margin-left: -5000px;
+        transform: translateX(100%);
     }
-}
-@keyframes projPicLowRight{
-    0%{
-        margin-left: 5000px;
+    100%{
+        transform: translateX(0);
     }
-}
-.projectInfoLeft,
-.projectInfoRight{
-    color:black;
-    position: absolute;
-    z-index: 1000;
-    top:50%;
-    transform: translateY(-50%);
-    padding:0px 15px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-
-}
-.projectInfoLeft{
-    animation:projInfoLowLeft 1s;
-}
-.projectInfoRight{
-    animation:projInfoLowRight 1s;
-}
-@keyframes projInfoLowLeft{
-    0%{
-        margin-left: 5000px;
-    }
-}
-@keyframes projInfoLowRight{
-    0%{
-        margin-left: -5000px;
-    }
-}
-.projectNameLeft,
-.projectNameRight{
-    font-size: 1.4rem;
-    color:rgb(0, 226, 170);
-    text-shadow: 2px 2px 1px  black;
-}
-
-.techsContainerLeft,
-.techsContainerRight{
-    display: flex;
-    font-size: 0.72rem;
-    font-weight: 700;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-.techsContainerLeft>p,
-.techsContainerRight>p{
-    margin-right: 10px;
 }
 
 @media(min-width:600px){
     .projects{
         margin:100px 50px 0px 50px;
-    }
-    .projectContainerLeft,
-    .projectContainerRight{
-        height: 400px;
-    }
-    .projectPictureLeft,
-    .projectPictureRight{
-        opacity: 0.5;
-    }
-    .projectInfoLeft,
-    .projectInfoRight{
-        background-color: rgb(250, 250, 250);
-        padding:20px;
-        left:20px;
-        border-radius: 10px;
-        box-shadow: 1px 3px 5px 0px black;
-    }
-    .projectAbout{
-        max-width: 400px;
     }
 }
 @media(min-width:900px){
@@ -147,89 +53,7 @@
     .projects{
         align-self: center;
     }
-    .projectContainerLeft,
-    .projectContainerRight{
-        display: flex;
-        align-items: center;
-        border:none;
-    }
-    .projectContainerRight{
-        flex-direction: row-reverse;
-    }
-    .projectPictureLeft,
-    .projectPictureRight{
-        opacity: 1;
-        width: 70%;
-        border:1px solid rgb(196, 196, 196);
-        object-fit:fill;
-        box-shadow: 1px 3px 5px 0px black;
-    }
-    .projectPictureLeft{
-        margin-right: -25px;
-        animation: projPicBig 1s;
-    }
-    .projectPictureRight{
-        margin-left: -25px;
-        animation: projPicBig2 1s;
-    }
 
-    @keyframes projPicBig{
-        0%{
-            margin-left: -5000px;
-        }
-    }
-    @keyframes projPicBig2{
-        0%{
-            margin-right: -5000px;
-        }
-    }
-    .projectInfoLeft,
-    .projectInfoRight{
-        padding:0;
-        position: initial;
-        left:unset;
-        background-color:inherit;
-        box-shadow: none;
-        transform:initial;
-    }
-    .projectInfoLeft{
-        margin-left: -25px;
-        animation:projInfoBig 1s;
-    }
-    .projectInfoRight{
-        margin-right: -25px;
-
-    }
-
-    @keyframes projInfoBig{
-        0%{
-            margin-right: 5000px;
-        }
-    }
-    .projectAbout{
-        background-color: rgb(250, 250, 250);
-        padding:20px;
-        border-radius: 10px;
-        max-width: 500px;
-    }
-    .projectNameRight,
-    .projectNameLeft{
-        text-shadow: none;
-        font-size: 1.8rem;
-    }
-    .projectNameLeft,
-    .linksIconsLeft,
-    .techsContainerLeft{
-        align-self: flex-end;
-    }
-    .techsContainerLeft>p{
-        margin:0;
-        margin-left: 10px;
-    }
-    .techsContainerRight>p{
-        margin:0;
-        margin-right: 10px;
-    }
 }
 
 @media(min-width:1200px){
