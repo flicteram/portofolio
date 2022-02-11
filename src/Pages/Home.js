@@ -8,9 +8,7 @@ import pdf from '../Alexandru Flicter - resume.pdf'
 
 
 function Home(){
-
     const navigate = useNavigate()
-
     return(
         <div className='homeContainer'>
             <Header homeNav={true} aboutNav={false} />
@@ -25,12 +23,12 @@ function Home(){
                 </div>
                 <div className='projectsHome'>
                     <h2 className='recentProjects'>Recent Projects</h2>
-                    {projectsData.slice(0,2).map(project=>
+                    {projectsData.slice(0,2).map((project)=>
                     <a className='projectHomeContainer' href={project.live} key={project.key}>
                         <h3 className='projectNameHome'>{project.name}</h3>
                         <p className='aboutProjectHome'>{project.aboutProject}</p>
                         <div className='techsContainerHome'>
-                            {project.techs.map(tech=><p>{tech}</p>)}
+                            {project.techs.map((tech,index)=><p key={index}>{tech}</p>)}
                         </div>
                     </a>
                     )}

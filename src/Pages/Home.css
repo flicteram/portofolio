@@ -4,13 +4,11 @@
     min-height: 100vh;
     justify-content: space-between;
     overflow: hidden;
-
 }
 .homeContainerInner{
     max-width: 900px;
     align-self: center;
     margin:0 20px;
-
 }
 .alex{
     color:rgb(0, 226, 170);;
@@ -19,16 +17,14 @@
     margin:100px 0px;
     display: flex;
     flex-direction: column;
-    animation: intro 1s;
+    animation: intro 250ms;
 }
 @keyframes intro{
     0%{
-        margin:100px 0px 0px 5000px;
-        width: 100%;
+        transform:translateX(-100%)
     }
     100%{
-        width: 100%;
-        margin:100px 0px;
+        transform:translateX(0)
     }
 }
 .heyThere{
@@ -54,8 +50,8 @@
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 1000ms;
-    transition:background-color 1000ms
+    transition: transform 1s;
+    transition:background-color 1s
 }
 a>.resumeButton{
     border:1px solid red;
@@ -65,35 +61,32 @@ a>.resumeButton{
     background-color: rgb(3, 182, 137);
     border:1px solid rgb(3, 182, 137);
     transform:scale(1.05);
-    transition: transform 1000ms;
-    transition:background-color 1000ms
+    transition: transform 1s;
+    transition:background-color 1s
 }
 .recentProjects{
     font-size: 1.8rem;
     font-weight: 800;
 }
+
 .projectsHome{
     display: flex;
     flex-direction: column;
-    animation:proj 1s;
+    animation: projHome 250ms;
 }
-
-
-@keyframes proj{
+@keyframes projHome{
     0%{
-        margin-left: -5000px;
-        width: 100%;
-    }   
+        transform: translateX(100%);
+    }
     100%{
-        margin:0;
-        width: 100%;
+        transform: translateX(0);
     }
 }
 .projectHomeContainer{
-    border:1px solid black;
+    border:1px solid rgb(196, 196, 196);
     margin:20px 0px;
     padding:15px;
-    border-radius: 10px;
+    border-radius: 5px;
     color:black;
 }
 .projectHomeContainer:hover,
