@@ -10,8 +10,17 @@
     padding-bottom: 10px;
     font-weight: 900;
     font-size: 2.3rem;
-    border-bottom:1px solid black;
+    border-bottom:1px solid rgb(196, 196, 196);
     margin-bottom: 20px;
+    animation:aboutAnim 250ms;
+}
+@keyframes aboutAnim{
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform:translateX(0%)
+    }
 }
 .aboutContentContainer{
     margin:100px 20px 0px 20px;
@@ -27,16 +36,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation:aboutMe 250ms;
 }
-
-@keyframes aboutLow {
+@keyframes aboutMe{
     0%{
-        margin-left: 5000px;
+        transform: translateY(50%);
+        opacity: 0;
     }
     100%{
-        
+        transform: translate(0);
+        opacity: 1;
     }
 }
+
 .aboutMeAvatar>h2{
     margin-top:5px;
     color:rgb(0, 226, 170);
@@ -59,8 +71,11 @@
 }
 .aboutMeText>p{
     margin-bottom: 20px;
+    transition:transform 500ms;
 }
-
+.techsAbout{
+    transition: transform 500ms;
+}
 
 @media(min-width:600px){
     .aboutContentContainer{
@@ -83,6 +98,24 @@
     .techsAbout{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .aboutMeText>p:first-child{
+        transition:transform 250ms
+    }
+    .aboutMeText>p:nth-child(2){
+        transition:transform 350ms
+    }
+    .aboutMeText>p:nth-child(3){
+        transition:transform 450ms
+    }
+    .aboutMeText>p:nth-child(4){
+        transition:transform 550ms
+    }
+    .aboutMeText>p:nth-child(5){
+        transition:transform 650ms
+    }
+    .techsAbout{
+        transition: transform 750ms;
     }
 }
 

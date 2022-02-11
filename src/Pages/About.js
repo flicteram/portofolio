@@ -7,10 +7,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
-
+import { useInView } from 'react-hook-inview'
 
 
 function About(){
+
+    const [ref1, inView1] = useInView({unobserveOnEnter:true,threshold:1})
+    const [ref2, inView2] = useInView({unobserveOnEnter:true,threshold:1})
+    const [ref3, inView3] = useInView({unobserveOnEnter:true,threshold:1})
+    const [ref4, inView4] = useInView({unobserveOnEnter:true,threshold:1})
+    const [ref5, inView5] = useInView({unobserveOnEnter:true,threshold:1})
+    const [ref6, inView6] = useInView({unobserveOnEnter:true,threshold:1})
+
+    const handleInView1 = () => inView1?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
+    const handleInView2 = () => inView2?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
+    const handleInView3 = () => inView3?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
+    const handleInView4 = () => inView4?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
+    const handleInView5 = () => inView5?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
+    const handleInView6 = () => inView6?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
 
     const styles={
         width:30,
@@ -43,32 +57,33 @@ function About(){
                         </div>
                     </div>
                     <div className='aboutMeText'>
-                        <p>I am a self taught developer based in Bucharest, Romania.
+                        <p ref={ref1} style={handleInView1()}>I am a self taught developer based in Bucharest, Romania.
                         I have experience designing and developing web applications,
                         from simple landing pages to progressive web applications.
                         </p>
-                        <p>
+                        <p ref={ref2} style={handleInView2()}>
                         What I like about programming is that you have always something new to learn, you never know enough,
                         the technology is evolving so fast and you have to keep up the phase, so, in my opinion everyday you are a better version of yourself.
                         </p>
-                        <p>
+                        <p ref={ref3} style={handleInView3()}>
                         I aspire towards a career that will allow me to help beginners learn, as I believe programming is not easy and it is
                         a huge quality to know how to explaing complex terms with simple and concise words.
                         </p>
-                        <p>
+                        <p ref={ref4} style={handleInView4()}>
                         When I am not coding, I like to spend my time playing video games, hanging out with friends, watching movies, playing football 
                         and hiking.    
                         </p>
-                        <p>
+                        <p ref={ref5} style={handleInView5()}>
                         Here are a few technologies I have been working with recently:   
                         </p>
-                        <div className='techsAbout'>
-                        <p>- HTML</p>
-                        <p>- CSS</p>
-                        <p>- JavaScript</p>
-                        <p>- React</p>
-                        <p>- Firebase</p>
-                        <p>- MaterialUI</p>
+                        <div className='techsAbout' ref={ref6} style={handleInView6()}>
+                            <p>⮞ HTML</p>
+                            <p>⮞ CSS</p>
+                            <p>⮞ JavaScript</p>
+                            <p>⮞ React</p>
+                            <p>⮞ Next.js</p>
+                            <p>⮞ Firebase</p>
+                            <p>⮞ MaterialUI</p>
                         </div>
                     </div>
                 </div>
