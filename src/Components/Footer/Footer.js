@@ -31,10 +31,10 @@ function Footer(){
             </div>
 
             <div className='socialMediaContainer'>
-            <a href='mailto:flicteralexandru@gmail.com'><EmailIcon sx={iconsStyle}/></a>
-            <a href='https://www.linkedin.com/in/alexandru-flicter-3b70ab220/'><LinkedInIcon sx={iconsStyle}/></a>
-            <a href='https://github.com/flicteram'><GitHubIcon sx={iconsStyle}/></a>
-            <a href='https://www.facebook.com/profile.php?id=100009972224077'><FacebookIcon sx={iconsStyle}/></a>
+                <a href='mailto:flicteralexandru@gmail.com'><EmailIcon sx={iconsStyle}/></a>
+                <a href='https://www.linkedin.com/in/alexandru-flicter-3b70ab220/'><LinkedInIcon sx={iconsStyle}/></a>
+                <a href='https://github.com/flicteram'><GitHubIcon sx={iconsStyle}/></a>
+                <a href='https://www.facebook.com/profile.php?id=100009972224077'><FacebookIcon sx={iconsStyle}/></a>
             </div>
             
         </footer>

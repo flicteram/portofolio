@@ -4,11 +4,13 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 .getInTouchContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     text-align: center;
 }
 .getInTouch{
@@ -39,6 +41,9 @@ footer{
     transition:background-color 1000ms
 }
 .socialMediaContainer{
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
 }
