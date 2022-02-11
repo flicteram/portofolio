@@ -13,7 +13,7 @@ function Projects(){
                 <h1>Projects</h1>
                 <p className='projectsIntroduction'>My personal projects are a way to keep track of my growth as a developer.</p>
                 <div className='projectsInfoContainer'>
-                    {projectsData.map((project,index)=><Project project={project} index={index}/>)}
+                    {projectsData.map((project,index)=><Project key={project.key} project={project} index={index}/>)}
                 </div>
             </div>
             <Footer/>
