@@ -52,7 +52,6 @@
     transform: translateX(0%);
     transform: translateY(-50%);
     transition: transform 250ms;
-    
 }
 .projectAbout{
     margin:10px 0px;
@@ -113,7 +112,7 @@
         border:1px solid rgb(196, 196, 196);
         box-shadow: 1px 3px 5px 0px black;
         object-position: 50% 0%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .projectContainer:nth-child(even)>.projectPicture,
     .projectContainerAnim:nth-child(even)>.projectPicture,
