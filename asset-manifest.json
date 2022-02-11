@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.b1fa63d9.chunk.css",
-    "main.js": "/portofolio/static/js/main.ff10cc20.chunk.js",
-    "main.js.map": "/portofolio/static/js/main.ff10cc20.chunk.js.map",
+    "main.css": "/portofolio/static/css/main.a3cdb609.chunk.css",
+    "main.js": "/portofolio/static/js/main.256fd5cf.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.256fd5cf.chunk.js.map",
     "runtime-main.js": "/portofolio/static/js/runtime-main.7c5729ed.js",
     "runtime-main.js.map": "/portofolio/static/js/runtime-main.7c5729ed.js.map",
-    "static/js/2.27e2b9fb.chunk.js": "/portofolio/static/js/2.27e2b9fb.chunk.js",
-    "static/js/2.27e2b9fb.chunk.js.map": "/portofolio/static/js/2.27e2b9fb.chunk.js.map",
+    "static/js/2.cb9bcf7f.chunk.js": "/portofolio/static/js/2.cb9bcf7f.chunk.js",
+    "static/js/2.cb9bcf7f.chunk.js.map": "/portofolio/static/js/2.cb9bcf7f.chunk.js.map",
     "index.html": "/portofolio/index.html",
-    "static/css/main.b1fa63d9.chunk.css.map": "/portofolio/static/css/main.b1fa63d9.chunk.css.map",
-    "static/js/2.27e2b9fb.chunk.js.LICENSE.txt": "/portofolio/static/js/2.27e2b9fb.chunk.js.LICENSE.txt",
-    "static/media/Alexandru Flicter - resume.71c5d361.pdf": "/portofolio/static/media/Alexandru Flicter - resume.71c5d361.pdf",
+    "static/css/main.a3cdb609.chunk.css.map": "/portofolio/static/css/main.a3cdb609.chunk.css.map",
+    "static/js/2.cb9bcf7f.chunk.js.LICENSE.txt": "/portofolio/static/js/2.cb9bcf7f.chunk.js.LICENSE.txt",
+    "static/media/Alexandru Flicter - resume.2f40172d.pdf": "/portofolio/static/media/Alexandru Flicter - resume.2f40172d.pdf",
     "static/media/covid-tracker.035a66a3.jpg": "/portofolio/static/media/covid-tracker.035a66a3.jpg",
+    "static/media/e-commerce.fd842e37.png": "/portofolio/static/media/e-commerce.fd842e37.png",
     "static/media/instagramPic.7b41caed.png": "/portofolio/static/media/instagramPic.7b41caed.png",
     "static/media/me.911ea754.jpg": "/portofolio/static/media/me.911ea754.jpg",
     "static/media/movieflix.ac60b478.jpg": "/portofolio/static/media/movieflix.ac60b478.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7c5729ed.js",
-    "static/js/2.27e2b9fb.chunk.js",
-    "static/css/main.b1fa63d9.chunk.css",
-    "static/js/main.ff10cc20.chunk.js"
+    "static/js/2.cb9bcf7f.chunk.js",
+    "static/css/main.a3cdb609.chunk.css",
+    "static/js/main.256fd5cf.chunk.js"
   ]
 }
