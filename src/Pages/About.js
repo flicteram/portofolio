@@ -51,9 +51,9 @@ function About(){
                         <p className='frontend'>Front-end Developer</p>
                         <div className='socialMediaAboutPage'>
                             <a href='mailto:flicteralexandru@gmail.com'><EmailIcon sx={styles}/></a>
-                            <a href='https://www.linkedin.com/in/alexandru-flicter-3b70ab220/'><LinkedInIcon sx={styles}/></a>
-                            <a href='https://github.com/flicteram'><GitHubIcon sx={styles}/></a>
-                            <a href='https://www.facebook.com/profile.php?id=100009972224077'><FacebookIcon sx={styles}/></a>
+                            <a href='https://www.linkedin.com/in/alexandru-flicter-3b70ab220/' target='_blank' rel="noreferrer"><LinkedInIcon sx={styles}/></a>
+                            <a href='https://github.com/flicteram' target='_blank' rel="noreferrer"><GitHubIcon sx={styles}/></a>
+                            <a href='https://www.facebook.com/profile.php?id=100009972224077' target='_blank' rel="noreferrer"><FacebookIcon sx={styles}/></a>
                         </div>
                     </div>
                     <div className='aboutMeText'>
