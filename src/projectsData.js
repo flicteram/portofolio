@@ -2,8 +2,7 @@ import instagramPic from '../src/Components/Images/instagramPic.png'
 import movieflix from '../src/Components/Images/movieflix.jpg'
 import covidtracker from '../src/Components/Images/covid-tracker.jpg'
 import ecommerce from '../src/Components/Images/e-commerce.png'
-
-export default [
+    const data = [
     {
         name:'ComfortZone',
         key:1,
@@ -47,3 +46,5 @@ export default [
         live:'https://flicteram.github.io/movieflix/',
     }
 ]
+
+export default data
