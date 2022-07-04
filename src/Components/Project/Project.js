@@ -18,8 +18,14 @@ export default function Project({project}){
                 {project.techs.map((tech,index)=><p key={index}>{tech}</p>)}
             </div>
             <div className='linksIcons'>
-                <a href={project.github} target='_blank' rel="noreferrer"><GitHubIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/></a>
-                <a href={project.live} target='_blank' rel="noreferrer"><LanguageIcon sx={{color:'black',width:'25px',height:'25px',marginLeft:'10px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/></a>
+                {project.github&&
+                    <a href={project.github} target='_blank' rel="noreferrer">
+                        <GitHubIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/>
+                    </a>
+                }
+                <a href={project.live} target='_blank' rel="noreferrer">
+                    <LanguageIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/>
+                </a>
             </div>
         </div>
     </div>

@@ -84,6 +84,9 @@ function About(){
                             <p>⮞ Next.js</p>
                             <p>⮞ Firebase</p>
                             <p>⮞ MaterialUI</p>
+                            <p>⮞ Redux</p>
+                            <p>⮞ Redux-Saga</p>
+                            <p>⮞ Semantic UI</p>
                         </div>
                     </div>
                 </div>
