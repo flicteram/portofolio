@@ -5,7 +5,7 @@ import projectsData from "../projectsData";
 import workData from "../workProjects";
 import Footer from "../Components/Footer/Footer";
 import {useNavigate} from 'react-router-dom'
-import pdf from '../Alexandru Flicter - resume.pdf'
+import pdf from '../Alexandru Flicter - resume 04.07.2022.pdf'
 
 
 function Home(){
@@ -20,7 +20,7 @@ function Home(){
                     <p className='aboutMeHome'>I love building beautiful, accessible and useful applications to the world wide.
                         Thank you for stopping by! I am glad you are here!
                     </p>
-                    <a href={pdf} download className='resumeButton'>Resume</a>
+                    <a href={pdf} target="_blank" className='resumeButton' rel="noreferrer">Resume</a>
                 </div>
                 <div className='projectsHome'>
                     <h2 className='recentProjects'>Work Projects</h2>
