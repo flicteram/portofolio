@@ -4,13 +4,13 @@ import './Home.css'
 import projectsData from "../projectsData";
 import workData from "../workProjects";
 import Footer from "../Components/Footer/Footer";
-import {useNavigate} from 'react-router-dom'
-import pdf from '../Alexandru Flicter - resume 04.07.2022.pdf'
+import { useNavigate } from 'react-router-dom'
+import pdf from '../Alexandru-Flicter-resume.pdf'
 
 
-function Home(){
+function Home() {
     const navigate = useNavigate()
-    return(
+    return (
         <div className='homeContainer'>
             <Header homeNav={true} aboutNav={false} />
             <div className='homeContainerInner'>
@@ -24,33 +24,33 @@ function Home(){
                 </div>
                 <div className='projectsHome'>
                     <h2 className='recentProjects'>Work Projects</h2>
-                    {workData.slice(0,2).map((project)=>
-                    <a className='projectHomeContainer' href={project.live} key={project.key} target='_blank' rel="noreferrer">
-                        <h3 className='projectNameHome'>{project.name}</h3>
-                        <p className='aboutProjectHome'>{project.aboutProject}</p>
-                        <div className='techsContainerHome'>
-                            {project.techs.map((tech,index)=><p key={index}>{tech}</p>)}
-                        </div>
-                    </a>
+                    {workData.slice(0, 2).map((project) =>
+                        <a className='projectHomeContainer' href={project.live} key={project.key} target='_blank' rel="noreferrer">
+                            <h3 className='projectNameHome'>{project.name}</h3>
+                            <p className='aboutProjectHome'>{project.aboutProject}</p>
+                            <div className='techsContainerHome'>
+                                {project.techs.map((tech, index) => <p key={index}>{tech}</p>)}
+                            </div>
+                        </a>
                     )}
-                    <p onClick={()=>navigate('/projects')} className='moreProjectsHome'>More projects</p>
+                    <p onClick={() => navigate('/projects')} className='moreProjectsHome'>More projects</p>
                 </div>
                 <div className='projectsHome'>
                     <h2 className='recentProjects'>Personal Projects</h2>
-                    {projectsData.slice(0,2).map((project)=>
-                    <a className='projectHomeContainer' href={project.live} key={project.key} target='_blank' rel="noreferrer">
-                        <h3 className='projectNameHome'>{project.name}</h3>
-                        <p className='aboutProjectHome'>{project.aboutProject}</p>
-                        <div className='techsContainerHome'>
-                            {project.techs.map((tech,index)=><p key={index}>{tech}</p>)}
-                        </div>
-                    </a>
+                    {projectsData.slice(0, 2).map((project) =>
+                        <a className='projectHomeContainer' href={project.live} key={project.key} target='_blank' rel="noreferrer">
+                            <h3 className='projectNameHome'>{project.name}</h3>
+                            <p className='aboutProjectHome'>{project.aboutProject}</p>
+                            <div className='techsContainerHome'>
+                                {project.techs.map((tech, index) => <p key={index}>{tech}</p>)}
+                            </div>
+                        </a>
                     )}
-                    <p onClick={()=>navigate('/projects')} className='moreProjectsHome'>More projects</p>
+                    <p onClick={() => navigate('/projects')} className='moreProjectsHome'>More projects</p>
                 </div>
             </div>
-            <Footer/>
-            
+            <Footer />
+
         </div>
     )
 }
