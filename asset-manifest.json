@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.15590793.chunk.css",
-    "main.js": "/portofolio/static/js/main.6f72104d.chunk.js",
-    "main.js.map": "/portofolio/static/js/main.6f72104d.chunk.js.map",
+    "main.js": "/portofolio/static/js/main.d3c9c400.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.d3c9c400.chunk.js.map",
     "runtime-main.js": "/portofolio/static/js/runtime-main.7c5729ed.js",
     "runtime-main.js.map": "/portofolio/static/js/runtime-main.7c5729ed.js.map",
     "static/js/2.450e7da9.chunk.js": "/portofolio/static/js/2.450e7da9.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/portofolio/index.html",
     "static/css/main.15590793.chunk.css.map": "/portofolio/static/css/main.15590793.chunk.css.map",
     "static/js/2.450e7da9.chunk.js.LICENSE.txt": "/portofolio/static/js/2.450e7da9.chunk.js.LICENSE.txt",
-    "static/media/Alexandru Flicter - resume 04.07.2022.167e504b.pdf": "/portofolio/static/media/Alexandru Flicter - resume 04.07.2022.167e504b.pdf",
+    "static/media/Alexandru-Flicter-resume.ac094a02.pdf": "/portofolio/static/media/Alexandru-Flicter-resume.ac094a02.pdf",
     "static/media/covid-tracker.d22409ab.jpg": "/portofolio/static/media/covid-tracker.d22409ab.jpg",
     "static/media/e-commerce.32155bb2.png": "/portofolio/static/media/e-commerce.32155bb2.png",
     "static/media/innovxImg.a24f7313.png": "/portofolio/static/media/innovxImg.a24f7313.png",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.7c5729ed.js",
     "static/js/2.450e7da9.chunk.js",
     "static/css/main.15590793.chunk.css",
-    "static/js/main.6f72104d.chunk.js"
+    "static/js/main.d3c9c400.chunk.js"
   ]
 }
