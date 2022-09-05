@@ -8,7 +8,7 @@ const data = [
         key: 1,
         aboutProject: `A business accelerator which makes easier communication between startups and investors.`,
         techs:['React', 'Redux-Saga', 'Semantic UI'],
-        live: 'https://development.innovationexchange.eu/',
+        live: 'https://innovationexchange.eu/',
         picture: innovxImg,
         github:''
     },
