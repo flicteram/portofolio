@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect, useMemo} from "react";
 import './Projects.css'
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
@@ -7,13 +7,35 @@ import workProjects from '../workProjects'
 import Project from "../Components/Project/Project";
 
 function Projects(){
+    const initialState = useMemo(()=>[...workProjects, ...projectsData], [])
     const [category,setCategory] = useState('all')
+    const [projects, setProjects] = useState(initialState)
 
     const handleCategoryChange = (value) =>{
         setCategory(value)
     }
 
     const handleActiveStyle = (value) => category === value ? 'activeCategory' : 'notActiveCategory'
+
+
+
+
+    useEffect(()=>{
+        const handleDisplayProjects = () =>{
+            switch(category){
+                case "personal":
+                    setProjects(projectsData)
+                    break;
+                case "work":
+                    setProjects(workProjects)
+                    break;
+                default:
+                    setProjects(initialState)
+                    break;
+            }
+        }
+        handleDisplayProjects()
+    },[category, initialState])
 
     return(
         <div className='projectsContainer'>
@@ -26,16 +48,9 @@ function Projects(){
                     <button onClick={()=>handleCategoryChange('work')} className={handleActiveStyle('work')}>Work</button>
                     <button onClick={()=>handleCategoryChange('personal')} className={handleActiveStyle('personal')}>Personal</button>
                 </div>
-                {(category === 'all' || category === 'work') && 
-                    <div className='projectsInfoContainer'>
-                        {workProjects.map((project,index)=><Project key={project.key} project={project} index={index}/>)}
-                    </div>
-                }
-                {(category === 'all' || category === 'personal') && 
-                    <div className='projectsInfoContainer'>
-                        {projectsData.map((project,index)=><Project key={project.key} project={project} index={index}/>)}
-                    </div>
-                }
+                <div className='projectsInfoContainer'>
+                        {projects.map((project,index)=><Project key={project.key} project={project} index={index}/>)}
+                </div>
             </div>
             <Footer/>
         </div>

@@ -80,6 +80,9 @@ function About(){
                             <p>⮞ HTML</p>
                             <p>⮞ CSS</p>
                             <p>⮞ JavaScript</p>
+                            <p>⮞ TypeScript</p>
+                            <p>⮞ GraphQl</p>
+                            <p>⮞ Apollo</p>
                             <p>⮞ React</p>
                             <p>⮞ Next.js</p>
                             <p>⮞ Firebase</p>

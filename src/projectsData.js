@@ -2,7 +2,19 @@ import instagramPic from '../src/Components/Images/instagramPic.png'
 import movieflix from '../src/Components/Images/movieflix.jpg'
 import covidtracker from '../src/Components/Images/covid-tracker.jpg'
 import ecommerce from '../src/Components/Images/e-commerce.png'
+import chatapp from '../src/Components/Images/chatapp.png'
+
     const data = [
+    {
+        name:'Chat App',
+        key:0,
+        picture:chatapp,
+        aboutProject:`A Full-Stack chat application done with MERN Stack and Socket.io`,
+        techs:['React','Express.js','Socket.io'],
+        github:'https://github.com/flicteram/chatapp',
+        live:'https://chatapp-frontend-ten.vercel.app/'
+
+    },
     {
         name:'ComfortZone',
         key:1,
