@@ -17,9 +17,6 @@ function Projects(){
 
     const handleActiveStyle = (value) => category === value ? 'activeCategory' : 'notActiveCategory'
 
-
-
-
     useEffect(()=>{
         const handleDisplayProjects = () =>{
             switch(category){
