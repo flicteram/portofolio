@@ -9,7 +9,9 @@ import chatapp from '../src/Components/Images/chatapp.png'
         name:'Chat App',
         key:0,
         picture:chatapp,
-        aboutProject:`A Full-Stack chat application done with MERN Stack and Socket.io`,
+        aboutProject:`A Full-Stack chat application done with MERN Stack and Socket.io. Create one-to-one chat or multiple group chats. 
+        Check messages status(sent,seen) and users status with one click. Login via Google, or create a new account in a few seconds.
+        `,
         techs:['React','Express.js','Socket.io'],
         github:'https://github.com/flicteram/chatapp',
         live:'https://chatapp-frontend-ten.vercel.app/'
