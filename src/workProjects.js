@@ -17,18 +17,8 @@ const data = [
         work:true,
     },
     {
-        name: 'InnovX-BCR',
-        key: 1,
-        aboutProject: `A business accelerator which makes easier communication between startups and investors.`,
-        techs:['React', 'Redux-Saga', 'Semantic UI'],
-        live: 'https://innovationexchange.eu/',
-        picture: innovxImg,
-        github:'',
-        work:true,
-    },
-    {
         name:'Veelancing',
-        key:2,
+        key:1,
         aboutProject: `
         Veelancing is an innovative decentralized marketplace for freelancers, 
         designed for all those who need to get a job done efficiently, 
@@ -38,7 +28,18 @@ const data = [
         picture: veelancingImg,
         github:'',
         work:true,
-    }
+    },
+    {
+        name: 'InnovX-BCR',
+        key: 2,
+        aboutProject: `A business accelerator which makes easier communication between startups and investors.`,
+        techs:['React', 'Redux-Saga', 'Semantic UI'],
+        live: 'https://innovationexchange.eu/',
+        picture: innovxImg,
+        github:'',
+        work:true,
+    },
+
 ]
 
 

@@ -18,20 +18,17 @@ function Projects(){
     const handleActiveStyle = (value) => category === value ? 'activeCategory' : 'notActiveCategory'
 
     useEffect(()=>{
-        const handleDisplayProjects = () =>{
-            switch(category){
-                case "personal":
-                    setProjects(projectsData)
-                    break;
-                case "work":
-                    setProjects(workProjects)
-                    break;
-                default:
-                    setProjects(initialState)
-                    break;
-            }
+        switch(category){
+            case "personal":
+                setProjects(projectsData)
+                break;
+            case "work":
+                setProjects(workProjects)
+                break;
+            default:
+                setProjects(initialState)
+                break;
         }
-        handleDisplayProjects()
     },[category, initialState])
 
     return(
