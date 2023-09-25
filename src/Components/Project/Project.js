@@ -20,11 +20,11 @@ export default function Project({project}){
             <div className='linksIcons'>
                 {project.github&&
                     <a href={project.github} target='_blank' rel="noreferrer">
-                        <GitHubIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/>
+                        <GitHubIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'var(--mainColor)',cursor:'pointer'}}}/>
                     </a>
                 }
                 <a href={project.live} target='_blank' rel="noreferrer">
-                    <LanguageIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'rgb(0, 255, 191)',cursor:'pointer'}}}/>
+                    <LanguageIcon sx={{color:'black',width:'25px',height:'25px',":hover":{color:'var(--mainColor)',cursor:'pointer'}}}/>
                 </a>
             </div>
         </div>

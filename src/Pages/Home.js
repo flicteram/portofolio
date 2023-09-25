@@ -17,7 +17,8 @@ function Home() {
                 <div className='introduction'>
                     <p className='heyThere'>HEY THERE,</p>
                     <h1 className='iAm'>I am <span className='alex'>Alex</span> 👋</h1>
-                    <p className='aboutMeHome'>I love building beautiful, accessible and useful applications to the world wide.
+                    <p className='aboutMeHome'>
+                        I love building beautiful, accessible and useful applications to the world wide.
                         Thank you for stopping by! I am glad you are here!
                     </p>
                     <a href={pdf} target="_blank" className='resumeButton' rel="noreferrer">Resume</a>

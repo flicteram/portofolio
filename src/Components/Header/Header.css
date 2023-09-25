@@ -1,181 +1,207 @@
-nav{
+nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding:20px 20px;
+    padding: 20px 20px;
 }
-.hamburger{
+
+.hamburger {
     display: inline-block;
     cursor: pointer;
     z-index: 1002;
     position: absolute;
     right: 0;
 }
-.hamburgerOpen{
+
+.hamburgerOpen {
     z-index: 1002;
-    cursor:pointer;
+    cursor: pointer;
     position: fixed;
     right: 20px;
     overflow: hidden;
 }
+
 .bar1,
 .bar2,
-.bar3{
+.bar3 {
     width: 30px;
     height: 3px;
     background-color: #333;
     margin: 6px 0;
 }
-.bar1,.bar3{
+
+.bar1,
+.bar3 {
     transform: rotate(0deg) translate(0px, 0px);
     transition: transform 250ms;
 }
-.hamburgerOpen>.bar1{
+
+.hamburgerOpen>.bar1 {
     transform: rotate(-45deg) translate(-9px, 6px);
     transition: transform 250ms;
 }
-.hamburgerOpen>.bar2{
+
+.hamburgerOpen>.bar2 {
     opacity: 0;
-    transition:opacity 250ms;
-}
-.hamburgerOpen>.bar3{
-    transform: rotate(45deg) translate(-6px, -4px);
-    transition:transform 250ms;
+    transition: opacity 250ms;
 }
 
-.navInner{
+.hamburgerOpen>.bar3 {
+    transform: rotate(45deg) translate(-6px, -4px);
+    transition: transform 250ms;
+}
+
+.navInner {
     display: flex;
     justify-content: center;
-    width:1200px;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.logo{
-    color:rgb(0, 226, 170);
+
+.logo {
+    color: var(--mainColor);
     font-weight: 700;
     font-size: 1.2rem;
     cursor: pointer;
 }
-ul{
+
+.navContainerHigh {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
-.locationNav{
+
+.locationNav {
     cursor: pointer;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
     display: none;
     list-style: none;
     font-size: 1rem;
     font-weight: 700;
-    color:black;
+    color: black;
 }
-.notLocationNav{
-    color:black;
+
+.notLocationNav {
+    color: black;
     cursor: pointer;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
     display: none;
     list-style: none;
     font-size: 1rem;
     font-weight: 700;
 }
-.locationNav::after{
-    display: block;
-    content:'';
-    border-bottom: 3px solid rgb(0, 226, 170);
-    border-radius: 5px;
-}
-.notLocationNav::after{
+
+.locationNav::after {
     display: block;
     content: '';
-    transform:scaleX(0);
-    border-bottom: 3px solid rgb(0, 226, 170);
+    border-bottom: 3px solid var(--mainColor);
     border-radius: 5px;
-    transition:transform 250ms;
 }
-.notLocationNav:hover::after{
+
+.notLocationNav::after {
+    display: block;
+    content: '';
+    transform: scaleX(0);
+    border-bottom: 3px solid var(--mainColor);
+    border-radius: 5px;
+    transition: transform 250ms;
+}
+
+.notLocationNav:hover::after {
     transform: scaleX(1);
-    transition:transform 250ms;
+    transition: transform 250ms;
 }
-.navItemLow{
-    padding:20px 50px;
+
+.navItemLow {
+    padding: 20px 50px;
     text-align: center;
-    color:black;
+    color: black;
     font-size: 2.5rem;
     font-weight: 900;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .navItemLow:hover,
-.navItemLow:focus{
+.navItemLow:focus {
     background-color: rgb(243, 243, 243);
-    color:rgb(0, 226, 170);
+    color: var(--mainColor);
 }
 
-.navLowOpen{
+.navLowOpen {
     background-color: rgb(190, 190, 190);
     display: flex;
     flex-direction: column;
     position: fixed;
     justify-content: space-evenly;
-    top:0px;
-    right:0px;
+    top: 0px;
+    right: 0px;
     bottom: 0px;
     width: 100%;
     z-index: 1001;
     transition: width 250ms;
 }
 
-.navLowClosed{
+.navLowClosed {
     background-color: rgb(190, 190, 190);
     display: flex;
     flex-direction: column;
     position: fixed;
     justify-content: space-evenly;
-    top:0px;
-    right:0px;
+    top: 0px;
+    right: 0px;
     bottom: 0px;
     width: 0;
     z-index: 1001;
     transition: width 250ms;
 }
 
-@media(min-width:600px){
-    .logo{
-        padding:10px;
+@media(min-width:600px) {
+    .logo {
+        padding: 10px;
     }
-    nav{
-        padding:10px 40px;
+
+    nav {
+        padding: 10px 40px;
     }
+
     .locationNav,
-    .notLocationNav{
-        display:inline-block;
+    .notLocationNav {
+        display: inline-block;
         font-size: 0.8rem;
     }
+
     .hamburger,
     .navLowOpen,
-    .hamburgerOpen{
+    .hamburgerOpen {
         display: none;
     }
 }
-@media(min-width:700px){
+
+@media(min-width:700px) {
+
     .locationNav,
-    .notLocationNav{
+    .notLocationNav {
         font-size: 0.95rem;
     }
 }
-@media(min-width:1200px){
-    .logo{
-        padding:10px 0px;
+
+@media(min-width:1200px) {
+    .logo {
+        padding: 10px 0px;
     }
-    ul{
+
+    .navContainerHigh {
         width: 25%;
     }
-    nav{
-        padding:10px;
+
+    nav {
+        padding: 10px;
     }
 }

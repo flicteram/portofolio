@@ -43,7 +43,7 @@ function Projects(){
                     <button onClick={()=>handleCategoryChange('personal')} className={handleActiveStyle('personal')}>Personal</button>
                 </div>
                 <div className='projectsInfoContainer'>
-                        {projects.map((project,index)=><Project key={project.key} project={project} index={index}/>)}
+                        {projects.map((project,index)=><Project key={index} project={project} index={index}/>)}
                 </div>
             </div>
             <Footer/>

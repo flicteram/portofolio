@@ -70,8 +70,7 @@
 
 .projectName {
     font-size: 1.4rem;
-    color: rgb(0, 226, 170);
-    text-shadow: 2px 2px 1px black;
+    color: var(--mainColor);
 }
 
 .techsContainer {

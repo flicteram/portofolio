@@ -1,46 +1,48 @@
-footer{
-    margin-top:100px;
-    padding:40px 20px;
+footer {
+    margin-top: 100px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-.getInTouchContainer{
+
+.getInTouchContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     text-align: center;
 }
-.getInTouch{
+
+.getInTouch {
     font-weight: 800;
     font-size: 1.9rem;
 }
-.getInTouchText{
-    margin:20px 0px;
+
+.getInTouchText {
+    margin: 20px 0px;
 }
-.sayHiButton{
-    padding:10px 20px;
-    background-color: rgb(0, 226, 170);
-    border:1px solid rgb(0, 226, 170);
-    color:white;
+
+.sayHiButton {
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: white;
     font-weight: 700;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 1000ms;
-    transition:background-color 1000ms
+    transition: transform .5;
 }
+
 .sayHiButton:focus,
-.sayHiButton:hover{
-    background-color: rgb(3, 182, 137);
-    border:1px solid rgb(3, 182, 137);
-    transform:scale(1.05);
-    transition: transform 1000ms;
-    transition:background-color 1000ms
+.sayHiButton:hover {
+    transform: scale(1.05);
+    transition: transform .5;
 }
-.socialMediaContainer{
+
+.socialMediaContainer {
     margin-top: 25px;
     text-align: center;
     display: flex;

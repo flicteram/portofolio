@@ -27,15 +27,15 @@ export default function About(){
                         <p className='frontend'>Front-end Developer</p>
                         <div className='socialMediaAboutPage'>
                             {aboutLinks.map(({href,icon})=>(
-                                <a href={href} target='_blank' rel="noreferrer">{icon}</a>
+                                <a href={href} target='_blank' rel="noreferrer" key={href}>{icon}</a>
                             ))}
                         </div>
                     </div>
                     <div className='aboutMeText'>
-                        {aboutPharagraphs.map(p=><AboutParagraph text={p}/>)}
+                        {aboutPharagraphs.map(p=><AboutParagraph text={p} key={p}/>)}
                         <div className='techsAbout' ref={ref} style={inViewStyle}>
                             {skills.map(skill=>(
-                                <p>⮞ {skill}</p>
+                                <p key={skill}>⮞ {skill}</p>
                             ))}
                         </div>
                     </div>
@@ -52,9 +52,9 @@ const styles={
     color:'black',
     borderRadius:'10px',
     padding:'2px',
-    boxShadow:'0px 0px 6px 0px rgb(0, 226, 170)',
+    boxShadow:'0px 0px 6px 0px var(--mainColor)',
     '&:hover':{
-        color:'rgb(0, 226, 170)',
+        color:'var(--mainColor)',
         cursor:'pointer'
     }
 }

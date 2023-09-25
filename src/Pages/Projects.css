@@ -75,7 +75,7 @@
 .activeCategory::after {
     display: block;
     content: '';
-    border-bottom: 3px solid rgb(0, 226, 170);
+    border-bottom: 3px solid var(--mainColor);
     border-radius: 5px;
 }
 
@@ -83,7 +83,7 @@
     display: block;
     content: '';
     transform: scaleX(0);
-    border-bottom: 3px solid rgb(0, 226, 170);
+    border-bottom: 3px solid var(--mainColor);
     border-radius: 5px;
     transition: transform 250ms;
 }

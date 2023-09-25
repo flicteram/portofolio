@@ -1,161 +1,185 @@
-.homeContainer{
+.homeContainer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
     overflow: hidden;
 }
-.homeContainerInner{
+
+.homeContainerInner {
     max-width: 900px;
     align-self: center;
-    margin:0 20px;
+    margin: 0 20px;
 }
-.alex{
-    color:rgb(0, 226, 170);;
+
+.alex {
+    color: var(--mainColor);
 }
-.introduction{
-    margin:100px 0px;
+
+.introduction {
+    margin: 100px 0px;
     display: flex;
     flex-direction: column;
     animation: intro 250ms;
 }
-@keyframes intro{
-    0%{
-        transform:translateX(-100%)
+
+@keyframes intro {
+    0% {
+        transform: translateX(-100%)
     }
-    100%{
-        transform:translateX(0)
+
+    100% {
+        transform: translateX(0)
     }
 }
-.heyThere{
-    color:rgb(0, 226, 170);;
+
+.heyThere {
+    color: var(--mainColor);
     font-weight: 700;
 }
-.iAm{
-    margin:15px 0px;
+
+.iAm {
+    margin: 15px 0px;
     font-size: 2.4rem;
     font-weight: 900;
 }
-.aboutMeHome{
+
+.aboutMeHome {
     margin-bottom: 15px;
     max-width: 500px;
 }
-.resumeButton{
+
+.resumeButton,
+.resumeButton:not(:focus-visible) {
     align-self: flex-start;
-    padding:10px 20px;
-    background-color: rgb(0, 226, 170);
-    border:1px solid rgb(0, 226, 170);
-    color:white;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: white;
     font-weight: 700;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 1s;
-    transition:background-color 1s
+    transform: scale(1);
+    transition: transform .5s;
 }
-a>.resumeButton{
-    border:1px solid red;
-}
+
 .resumeButton:hover,
-.resumeButton:focus{
-    background-color: rgb(3, 182, 137);
-    border:1px solid rgb(3, 182, 137);
-    transform:scale(1.05);
-    transition: transform 1s;
-    transition:background-color 1s
+.resumeButton:focus {
+    transform: scale(1.05);
+    transition: transform .5s;
 }
-.recentProjects{
+
+
+.recentProjects {
     font-size: 1.8rem;
     font-weight: 800;
 }
 
-.projectsHome{
+.projectsHome {
     display: flex;
     flex-direction: column;
     animation: projHome 250ms;
 }
-@keyframes projHome{
-    0%{
+
+@keyframes projHome {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-.projectHomeContainer{
-    border:1px solid rgb(196, 196, 196);
-    margin:20px 0px;
-    padding:15px;
+
+.projectHomeContainer {
+    border: 1px solid rgb(196, 196, 196);
+    margin: 20px 0px;
+    padding: 15px;
     border-radius: 5px;
-    color:black;
+    color: black;
 }
+
 .projectHomeContainer:hover,
-.projectHomeContainer:focus{
+.projectHomeContainer:focus {
     cursor: pointer;
     box-shadow: 0px 2px 5px 1px black;
     transform: scale(1.01);
 }
 
-.projectNameHome{
-    color:rgb(0, 226, 170);
+.projectNameHome {
+    color: var(--mainColor);
 }
-.aboutProjectHome{
-    margin:20px 0px;
+
+.aboutProjectHome {
+    margin: 20px 0px;
     font-size: 0.95rem;
 }
-.techsContainerHome{
+
+.techsContainerHome {
     display: flex;
     font-size: 0.8rem;
     font-style: italic;
     font-weight: 600;
     justify-content: flex-end;
 }
-.techsContainerHome>p{
+
+.techsContainerHome>p {
     margin-left: 10px;
 }
-.moreProjectsHome{
+
+.moreProjectsHome {
     align-self: center;
     font-size: 0.8rem;
 }
+
 .moreProjectsHome:hover,
-.moreProjectsHome:focus{
+.moreProjectsHome:focus {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-@media(min-width:600px){
-    .homeContainerInner{
-        margin:0 50px;
+@media(min-width:600px) {
+    .homeContainerInner {
+        margin: 0 50px;
     }
 }
 
-@media(min-width:900px){
-    .heyThere{
+@media(min-width:900px) {
+    .heyThere {
         font-size: 1.2rem;
     }
-    .iAm{
+
+    .iAm {
         font-size: 3rem;
     }
-    .aboutMeHome{
+
+    .aboutMeHome {
         font-size: 1.2rem;
         max-width: 700px;
     }
-    .resumeButton{
+
+    .resumeButton {
         font-size: 1rem;
     }
-    .recentProjects{
+
+    .recentProjects {
         font-size: 2rem;
     }
-    .projectNameHome{
+
+    .projectNameHome {
         font-size: 1.5rem;
     }
-    .aboutProjectHome{
+
+    .aboutProjectHome {
         font-size: 1.2rem;
     }
-    .techsContainerHome{
+
+    .techsContainerHome {
         font-size: 1rem;
     }
-    .moreProjectsHome{
+
+    .moreProjectsHome {
         font-size: 1rem;
     }
 }
