@@ -1,15 +1,30 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.bc2ace9c.chunk.css",
-    "main.js": "/portofolio/static/js/main.9630b083.chunk.js",
-    "main.js.map": "/portofolio/static/js/main.9630b083.chunk.js.map",
-    "runtime-main.js": "/portofolio/static/js/runtime-main.7c5729ed.js",
-    "runtime-main.js.map": "/portofolio/static/js/runtime-main.7c5729ed.js.map",
-    "static/js/2.1f585676.chunk.js": "/portofolio/static/js/2.1f585676.chunk.js",
-    "static/js/2.1f585676.chunk.js.map": "/portofolio/static/js/2.1f585676.chunk.js.map",
+    "static/js/0.577e4a02.chunk.js": "/portofolio/static/js/0.577e4a02.chunk.js",
+    "static/js/0.577e4a02.chunk.js.map": "/portofolio/static/js/0.577e4a02.chunk.js.map",
+    "main.css": "/portofolio/static/css/main.eda39ab5.chunk.css",
+    "main.js": "/portofolio/static/js/main.5e181ee3.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.5e181ee3.chunk.js.map",
+    "runtime-main.js": "/portofolio/static/js/runtime-main.c89a6a81.js",
+    "runtime-main.js.map": "/portofolio/static/js/runtime-main.c89a6a81.js.map",
+    "static/js/3.963a121c.chunk.js": "/portofolio/static/js/3.963a121c.chunk.js",
+    "static/js/3.963a121c.chunk.js.map": "/portofolio/static/js/3.963a121c.chunk.js.map",
+    "static/css/4.db31e112.chunk.css": "/portofolio/static/css/4.db31e112.chunk.css",
+    "static/js/4.2da44cb3.chunk.js": "/portofolio/static/js/4.2da44cb3.chunk.js",
+    "static/js/4.2da44cb3.chunk.js.map": "/portofolio/static/js/4.2da44cb3.chunk.js.map",
+    "static/css/5.2eefb397.chunk.css": "/portofolio/static/css/5.2eefb397.chunk.css",
+    "static/js/5.ac643a4c.chunk.js": "/portofolio/static/js/5.ac643a4c.chunk.js",
+    "static/js/5.ac643a4c.chunk.js.map": "/portofolio/static/js/5.ac643a4c.chunk.js.map",
+    "static/css/6.78eeb37d.chunk.css": "/portofolio/static/css/6.78eeb37d.chunk.css",
+    "static/js/6.585102c5.chunk.js": "/portofolio/static/js/6.585102c5.chunk.js",
+    "static/js/6.585102c5.chunk.js.map": "/portofolio/static/js/6.585102c5.chunk.js.map",
     "index.html": "/portofolio/index.html",
-    "static/css/main.bc2ace9c.chunk.css.map": "/portofolio/static/css/main.bc2ace9c.chunk.css.map",
-    "static/js/2.1f585676.chunk.js.LICENSE.txt": "/portofolio/static/js/2.1f585676.chunk.js.LICENSE.txt",
+    "static/css/4.db31e112.chunk.css.map": "/portofolio/static/css/4.db31e112.chunk.css.map",
+    "static/css/5.2eefb397.chunk.css.map": "/portofolio/static/css/5.2eefb397.chunk.css.map",
+    "static/css/6.78eeb37d.chunk.css.map": "/portofolio/static/css/6.78eeb37d.chunk.css.map",
+    "static/css/main.eda39ab5.chunk.css.map": "/portofolio/static/css/main.eda39ab5.chunk.css.map",
+    "static/js/0.577e4a02.chunk.js.LICENSE.txt": "/portofolio/static/js/0.577e4a02.chunk.js.LICENSE.txt",
+    "static/js/3.963a121c.chunk.js.LICENSE.txt": "/portofolio/static/js/3.963a121c.chunk.js.LICENSE.txt",
     "static/media/Alexandru-Flicter-resume.be2bd82a.pdf": "/portofolio/static/media/Alexandru-Flicter-resume.be2bd82a.pdf",
     "static/media/chatapp.3a7480c5.png": "/portofolio/static/media/chatapp.3a7480c5.png",
     "static/media/covid-tracker.d22409ab.jpg": "/portofolio/static/media/covid-tracker.d22409ab.jpg",
@@ -21,9 +36,9 @@
     "static/media/veelancingImg.b7ef234e.png": "/portofolio/static/media/veelancingImg.b7ef234e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c5729ed.js",
-    "static/js/2.1f585676.chunk.js",
-    "static/css/main.bc2ace9c.chunk.css",
-    "static/js/main.9630b083.chunk.js"
+    "static/js/runtime-main.c89a6a81.js",
+    "static/js/3.963a121c.chunk.js",
+    "static/css/main.eda39ab5.chunk.css",
+    "static/js/main.5e181ee3.chunk.js"
   ]
 }
