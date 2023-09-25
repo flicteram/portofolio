@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,MACI,mBACJ,CAEA,EACI,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,8BACJ","file":"main.eda39ab5.chunk.css","sourcesContent":[":root {\r\n    --mainColor: rgb(0, 95, 112);\r\n}\r\n\r\n* {\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: 'Inter', sans-serif;\r\n}"]}
