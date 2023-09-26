@@ -11,31 +11,37 @@ function Header(){
     location.pathname===locationToCheck
     ?'locationNav'
     :'notLocationNav'
-    const handleOpen=()=>isOpen?setIsOpen(false):setIsOpen(true)
+    const toggleNav=()=>setIsOpen(prev=>!prev)
     return(
         <nav>
             <div className='navInner'>
                 <span className='logo' onClick={()=>navigate('/')}>{'<alexdev/>'}</span>
                 <div>
-                    <Link to={'/'} className={handleDisplayLocationClass("/")} aria-label="Home">Home</Link>
-                    <Link to={'/projects'} className={handleDisplayLocationClass("/projects")} aria-label="Projects">Projects</Link>
-                    <Link to={'/about'} className={handleDisplayLocationClass("/about")} aria-label="About">About</Link>
+                    {routes.map(({route,routeName})=>(
+                        <Link to={route} className={handleDisplayLocationClass(route)} aria-label={routeName}>{routeName}</Link>
+                    ))}
                 </div>
 
-                <div className={isOpen?'hamburgerOpen':'hamburger'} onClick={handleOpen}>
+                <div className={isOpen?'hamburgerOpen':'hamburger'} onClick={toggleNav}>
                     <div className='bar1'></div>
                     <div className='bar2'></div>
                     <div className='bar3'></div>
                 </div>
                 
                 <div className={isOpen?'navLowOpen':'navLowClosed'}>
-                    <Link to={'/'} className='navItemLow' aria-label="Home">Home</Link>
-                    <Link to={'/projects'} className='navItemLow' aria-label="Projects">Projects</Link>
-                    <Link to={'/about'} className='navItemLow' aria-label="About">About</Link>
+                    {routes.map(({route,routeName})=>(
+                        <Link to={route} className={"navItemLow"} aria-label={routeName} onClick={toggleNav}>{routeName}</Link>
+                    ))}
                 </div>
             </div>           
         </nav>
     )
 }
+
+const routes = [
+{route:"/", routeName:"Home"},
+{route:"/projects", routeName:"Projects"},
+{route:"/about", routeName:"About"}
+]
 
 export default Header

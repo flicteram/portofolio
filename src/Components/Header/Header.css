@@ -26,7 +26,7 @@ nav {
 .bar3 {
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: var(--mainColor);
     margin: 6px 0;
 }
 
@@ -119,7 +119,7 @@ nav {
 .navItemLow {
     padding: 20px 50px;
     text-align: center;
-    color: black;
+    color: var(--mainColor);
     font-size: 2.5rem;
     font-weight: 900;
 }
@@ -131,35 +131,28 @@ a {
 .navItemLow:hover,
 .navItemLow:focus {
     background-color: rgb(243, 243, 243);
-    color: var(--mainColor);
+}
+
+.navLowOpen,
+.navLowClosed {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-evenly;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1001;
+    transition: width 250ms;
 }
 
 .navLowOpen {
-    background-color: rgb(190, 190, 190);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: space-evenly;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
     width: 100%;
-    z-index: 1001;
-    transition: width 250ms;
 }
 
 .navLowClosed {
-    background-color: rgb(190, 190, 190);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: space-evenly;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
     width: 0;
-    z-index: 1001;
-    transition: width 250ms;
 }
 
 @media(min-width:600px) {
