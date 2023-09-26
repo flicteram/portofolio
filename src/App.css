@@ -8,3 +8,21 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+
+.logoLoading {
+    font-weight: 800;
+    color: var(--mainColor);
+    animation: loadingAnimation 2s infinite alternate;
+    align-self: center;
+    justify-self: center;
+}
+
+@keyframes loadingAnimation {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}

@@ -7,7 +7,7 @@ import chatapp from '../src/Components/Images/chatapp.png'
     const data = [
     {
         name:'Chat App',
-        key:0,
+        key:10,
         picture:chatapp,
         aboutProject:`A Full-Stack chat application done with MERN Stack and Socket.io. Create one-to-one chat or multiple group chats. 
         Check messages status(sent,seen) and users status with one click. Login via Google, or create a new account in a few seconds.
@@ -19,7 +19,7 @@ import chatapp from '../src/Components/Images/chatapp.png'
     },
     {
         name:'ComfortZone',
-        key:1,
+        key:11,
         picture:ecommerce,
         aboutProject:`An e-commerce website, which includes most notorious functionalities,
         like: user login, keep track of user's products added in to the cart and filter through
@@ -31,7 +31,7 @@ import chatapp from '../src/Components/Images/chatapp.png'
     },
     {
         name:'Instagram Clone',
-        key:2,
+        key:12,
         picture:instagramPic,
         aboutProject:`A clone after the notorious social media app that allows user to share pictures,
         add comments and react to other people posts. Once logged in, the user is able to edit his profile as he wishes.`,
@@ -42,7 +42,7 @@ import chatapp from '../src/Components/Images/chatapp.png'
     },
     {
         name:'Covid-Tracker app',
-        key:3,
+        key:13,
         picture:covidtracker,
         aboutProject:`An app which aims to keep user up to date about coivd-19 situation around the globe.`,
         techs:['React','COVID-19 API','React Chart'],
@@ -51,7 +51,7 @@ import chatapp from '../src/Components/Images/chatapp.png'
     },
     {
         name:'Movieflix',
-        key:4,
+        key:14,
         picture:movieflix,
         aboutProject:`With an interface inspired by Netflix, Movieflix gives the user opportunity to search
         information of a movie of his choice.`,

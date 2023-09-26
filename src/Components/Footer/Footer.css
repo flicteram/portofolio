@@ -1,17 +1,18 @@
 footer {
-    margin-top: 100px;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 260px;
 }
 
 .getInTouchContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 

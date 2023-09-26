@@ -1,6 +1,6 @@
 import innovxImg from '../src/Components/Images/innovxImg.png'
 import veelancingImg from '../src/Components/Images/veelancingImg.png'
-import microsoftImg from '../src/Components/Images/microsoft.png'
+import microsoftImg from '../src/Components/Images/microsoft.jpg'
 
 const data = [
     {

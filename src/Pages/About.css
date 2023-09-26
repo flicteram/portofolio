@@ -1,10 +1,8 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .aboutMeTitle {
@@ -27,7 +25,7 @@
 }
 
 .aboutContentContainer {
-    margin: 100px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
     max-width: 1200px;
     animation: aboutLow 1s;
 }
@@ -88,11 +86,17 @@
 
 .techsAbout {
     transition: transform 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media(min-width:600px) {
     .aboutContentContainer {
-        margin: 100px 50px 0px 50px;
+        margin: 0px 50px 0px 50px;
+    }
+
+    .techsAbout {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -109,11 +113,6 @@
 
     .aboutMeTitle {
         margin-bottom: 50px;
-    }
-
-    .techsAbout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
     .aboutMeText>p:first-child {
@@ -144,11 +143,15 @@
 @media(min-width:1200px) {
     .aboutContentContainer {
         width: 98%;
-        margin: 100px 0px 0px 0px;
+        margin: 0
     }
 
     .aboutMeTitle {
         font-size: 3rem;
+    }
+
+    .techsAbout {
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }

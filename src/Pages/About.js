@@ -1,7 +1,5 @@
 import React from "react";
 import './About.css'
-import Header from "../Components/Header/Header";
-import Footer from '../Components/Footer/Footer'
 import imgMe from '../Components/Images/me.jpg'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -9,39 +7,38 @@ import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useInView } from 'react-hook-inview'
 import AboutParagraph from "../Components/AboutParagraph";
+import useChangePageTitle from "../Hooks/useChangePageTitle";
 
 export default function About(){
 
     const [ref, inView] = useInView({unobserveOnEnter:true,threshold:1})
     const inViewStyle = inView?{transform:'rotateY(0deg)'}:{transform: 'rotateY(-90deg)'};
-
+    useChangePageTitle("About")
     return(
     <div className='aboutContainer'>
-        <Header aboutNav={true}/>
-            <div className='aboutContentContainer'>
-                <h1 className='aboutMeTitle'>About Me</h1>
-                <div className='aboutContentInner'>
-                    <div className='aboutMeAvatar'>
-                        <img src={imgMe} className='imgMe' alt={'Alexandru Flicter'}/>
-                        <h2>Alexandru Flicter</h2>
-                        <p className='frontend'>Front-end Developer</p>
-                        <div className='socialMediaAboutPage'>
-                            {aboutLinks.map(({href,icon})=>(
-                                <a href={href} target='_blank' rel="noreferrer" key={href}>{icon}</a>
-                            ))}
-                        </div>
+        <div className='aboutContentContainer'>
+          <h1 className='aboutMeTitle'>About Me</h1>
+            <div className='aboutContentInner'>
+                <div className='aboutMeAvatar'>
+                    <img src={imgMe} className='imgMe' alt={'Alexandru Flicter'}/>
+                    <h2>Alexandru Flicter</h2>
+                    <p className='frontend'>Front-end Developer</p>
+                    <div className='socialMediaAboutPage'>
+                        {aboutLinks.map(({href,icon})=>(
+                            <a href={href} target='_blank' rel="noreferrer" key={href}>{icon}</a>
+                        ))}
                     </div>
-                    <div className='aboutMeText'>
-                        {aboutPharagraphs.map(p=><AboutParagraph text={p} key={p}/>)}
-                        <div className='techsAbout' ref={ref} style={inViewStyle}>
-                            {skills.map(skill=>(
-                                <p key={skill}>⮞ {skill}</p>
-                            ))}
-                        </div>
+                </div>
+                <div className='aboutMeText'>
+                    {aboutPharagraphs.map(p=><AboutParagraph text={p} key={p}/>)}
+                    <div className='techsAbout' ref={ref} style={inViewStyle}>
+                        {skills.map(skill=>(
+                            <p key={skill}>⮞ {skill}</p>
+                        ))}
                     </div>
                 </div>
             </div>
-        <Footer/>
+        </div>
     </div>
     )
 }
@@ -79,15 +76,21 @@ const aboutLinks = [
 
 const aboutPharagraphs = [
     `I am a self taught developer based in Bucharest, Romania.
-    I have experience designing and developing web applications,
-    from simple landing pages to progressive web applications.`,
-    `What I like about programming is that you have always something new to learn, you never know enough,
-    the technology is evolving so fast and you have to keep up the phase, so, in my opinion everyday you are a better version of yourself.`,
-    `I aspire towards a career that will allow me to help beginners learn, as I believe programming is not easy and it is
-    a huge quality to know how to explaing complex terms with simple and concise words.`,
-    `When I am not coding, I like to spend my time playing video games, hanging out with friends, watching movies, playing football 
-    and hiking.`,
-    `Here are a few technologies I have been working with recently: `
+    I am a highly skilled Frontend Developer with three years of experience in the industry. 
+    I've had the privilege to work for renowned companies such as Microsoft and Veelancing, 
+    where I've made significant contributions to various projects, including the renowned Microsoft Teams, 
+    and several medium-sized initiatives.`,
+    `My journey in Frontend Development has equipped me with a deep understanding of web development technologies, frameworks, 
+    and best practices. Crafting intuitive and visually appealing user interfaces has been my forte, enhancing the user experience 
+    for the products and platforms I've been involved in.`,
+    `One of my standout achievements was my involvement in the development of Microsoft Teams, 
+    a widely used collaboration tool that has transformed the way people communicate and work together. 
+    My contributions to this flagship project have likely left a lasting impact on millions of users worldwide.`,
+    `My experience extends beyond tech giants like Microsoft. I've also lent my expertise to Veelancing, 
+    where I played a vital role in executing and delivering various medium-sized projects. 
+    My adaptability and versatility in handling different scales of projects 
+    demonstrate my ability to excel in diverse work environments.`,
+    `Here are a few technologies I feel most comfortable with: `
 ]
 
 const skills = [

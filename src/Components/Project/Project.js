@@ -10,7 +10,7 @@ export default function Project({project}){
 
     return (
     <div className={isVisible?'projectContainerAnim':'projectContainer'} ref={ref}>
-        <img className={isVisible?'projectPictureAnim':'projectPicture'} src={project.picture} alt={project.name}/>
+        <img className={isVisible?'projectPictureAnim':'projectPicture'} src={project.picture} alt={project.name} />
         <div className={isVisible?'projectInfoAnim':'projectInfo'}>
             <h3 className='projectName'>{project.name}</h3>
             <p className='projectAbout'>{project.aboutProject}</p>

@@ -1,15 +1,15 @@
 import React, {useState, useEffect, useMemo} from "react";
 import './Projects.css'
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
 import projectsData from "../projectsData";
 import workProjects from '../workProjects'
 import Project from "../Components/Project/Project";
+import useChangePageTitle from "../Hooks/useChangePageTitle";
 
 function Projects(){
     const initialState = useMemo(()=>[...workProjects, ...projectsData], [])
     const [category,setCategory] = useState('all')
     const [projects, setProjects] = useState(initialState)
+    useChangePageTitle("Projects")
 
     const handleCategoryChange = (value) =>{
         setCategory(value)
@@ -33,7 +33,6 @@ function Projects(){
 
     return(
         <div className='projectsContainer'>
-            <Header projects={true}/>
             <div className='projects'>
                 <h1>Projects</h1>
                 <p className='projectsIntroduction'>My personal projects and the projects I have contributed on are a way to keep track of my growth as a developer.</p>
@@ -46,7 +45,6 @@ function Projects(){
                         {projects.map((project,index)=><Project key={index} project={project} index={index}/>)}
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
