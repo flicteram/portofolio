@@ -18,7 +18,12 @@ function Header(){
                 <span className='logo' onClick={()=>navigate('/')}>{'<alexdev/>'}</span>
                 <div>
                     {routes.map(({route,routeName})=>(
-                        <Link to={route} className={handleDisplayLocationClass(route)} aria-label={routeName}>{routeName}</Link>
+                        <Link key={route+routeName} 
+                        to={route} 
+                        className={handleDisplayLocationClass(route)} 
+                        aria-label={routeName}>
+                            {routeName}
+                        </Link>
                     ))}
                 </div>
 
@@ -30,7 +35,14 @@ function Header(){
                 
                 <div className={isOpen?'navLowOpen':'navLowClosed'}>
                     {routes.map(({route,routeName})=>(
-                        <Link to={route} className={"navItemLow"} aria-label={routeName} onClick={toggleNav}>{routeName}</Link>
+                        <Link 
+                        to={route} 
+                        className={"navItemLow"} 
+                        aria-label={routeName} 
+                        key={routeName+route}
+                        onClick={toggleNav}>
+                            {routeName}
+                        </Link>
                     ))}
                 </div>
             </div>           
